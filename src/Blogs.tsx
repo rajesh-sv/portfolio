@@ -1,7 +1,10 @@
+import { useEffect } from "react";
 import WebNovelBlog from "./components/blogs/webnovel-blog";
 import BinarySearchBlog from "./components/blogs/webnovel-blog";
 
 function Blogs() {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <div className="container mt-12 max-w-screen-lg animate-main px-8">

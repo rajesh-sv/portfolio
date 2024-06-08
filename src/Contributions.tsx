@@ -1,8 +1,11 @@
 import ContributionCard from "./components/contribution-card";
 import { contributions } from "./data/contributions";
 import workInProgressImg from "./assets/images/work-in-progress.png";
+import { useEffect } from "react";
 
 function Contributions() {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
       <div className="container mt-12 max-w-screen-lg animate-main px-8">

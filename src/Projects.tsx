@@ -1,12 +1,15 @@
+import { useEffect } from "react";
 import ProjectCard from "./components/project-card";
 import { projects } from "./data/projects";
 import { motion } from "framer-motion";
 
 function Projects() {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
-      <div className="animate-main container mt-12 max-w-screen-lg px-8">
-        <div className="bg-dot-black/20 dark:bg-dot-white/20 p-8 max-[350px]:p-2">
+      <div className="container mt-12 max-w-screen-lg animate-main px-8">
+        <div className="p-8 bg-dot-black/20 dark:bg-dot-white/20 max-[350px]:p-2">
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight max-[350px]:text-2xl md:text-5xl">
             Code
             <span className="text-muted-foreground">crafts.</span>

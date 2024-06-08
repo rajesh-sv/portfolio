@@ -2,12 +2,15 @@ import profileImg from "./assets/images/profile.jpg";
 import { skillCategories } from "./data/skills";
 import SkillCard from "./components/skill-card";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <main>
-      <div className="animate-main container mt-12 max-w-screen-lg px-8">
-        <div className="bg-dot-black/20 dark:bg-dot-white/20 flex items-start gap-4 p-8 max-[350px]:p-2">
+      <div className="container mt-12 max-w-screen-lg animate-main px-8">
+        <div className="flex items-start gap-4 p-8 bg-dot-black/20 dark:bg-dot-white/20 max-[350px]:p-2">
           <div>
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight max-[470px]:text-3xl max-[400px]:text-2xl md:text-5xl">
               Hey! I'm{" "}
