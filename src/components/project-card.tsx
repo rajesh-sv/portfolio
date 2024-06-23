@@ -23,7 +23,7 @@ function ProjectCard({ project }: { project: projectType }) {
       <img
         src={project.img}
         alt=""
-        className="object-cover transition-transform hover:scale-105"
+        className="aspect-[24/11] object-contain transition-transform hover:scale-105"
       />
       <CardHeader>
         <CardTitle className="text-base">
