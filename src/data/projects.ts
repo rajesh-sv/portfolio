@@ -8,10 +8,12 @@ import tailwindIcon from "../assets/icons/tailwindcss.svg";
 import shadcnIcon from "../assets/icons/shadcn.svg";
 import nodeIcon from "../assets/icons/nodejs.svg";
 import expressIcon from "../assets/icons/express.svg";
+import socketioIcon from "../assets/icons/socketio.svg";
 import pugIcon from "../assets/icons/pug.svg";
 import mongoIcon from "../assets/icons/mongodb.svg";
 import mantineIcon from "../assets/icons/mantine.svg";
 import portfolioImg from "../assets/images/projects/portfolio-light.png";
+import daoistDialogueImg from "../assets/images/projects/daoist-dialogue.png";
 import todoImg from "../assets/images/projects/todos-to-do.png";
 import wuxiaLibImg from "../assets/images/projects/wuxia-lib.png";
 import shoppingCartImg from "../assets/images/projects/shopping-cart.png";
@@ -31,11 +33,26 @@ export type projectType = {
 export const projects: projectType[] = [
   {
     name: "Portfolio",
-    desc: "The website you are currently exploring. I hope you finding it user-friendly and visually pleasing. By the way, check out the error page by visiting a random path like '/error' - I think you'll find it impressive!",
+    desc: "The website you are currently exploring. I hope you finding it user-friendly and visually pleasing.",
     img: portfolioImg,
     liveLink: "https://portfolio.rajesh-sv.dev/",
     codeLink: "https://github.com/rajesh-sv/portfolio",
     icons: [typescriptIcon, reactIcon, viteIcon, tailwindIcon, shadcnIcon],
+  },
+  {
+    name: "Daoist Dialogue",
+    desc: "A chat application inspired by the timeless tales of Xianxia. This app is designed to provide daoists with a seamless and engaging dao discussion.",
+    img: daoistDialogueImg,
+    liveLink: "https://daoist-dialogue.rajesh-sv.dev/",
+    codeLink: "https://github.com/rajesh-sv/daoist-dialogue",
+    icons: [
+      nodeIcon,
+      expressIcon,
+      socketioIcon,
+      reactIcon,
+      tailwindIcon,
+      shadcnIcon,
+    ],
   },
   {
     name: "Todo's to Do",
