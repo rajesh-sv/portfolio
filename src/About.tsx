@@ -3,6 +3,15 @@ import { skillCategories } from "./data/skills";
 import SkillCard from "./components/skill-card";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import ExperienceCard from "./components/experience-card";
+import { experiences } from "./data/experiences";
 
 function About() {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -136,6 +145,24 @@ function About() {
             );
           })}
         </motion.ul>
+        <h1 className="mt-4 scroll-m-20 border-b pb-2 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          Experience
+        </h1>
+        <div className="my-6 p-4">
+          <Carousel className="mx-auto w-full max-w-lg">
+            <CarouselContent>
+              {experiences.map((experience, i) => (
+                <CarouselItem key={i}>
+                  <div className="p-1">
+                    <ExperienceCard experience={experience} />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
       </div>
     </main>
   );
