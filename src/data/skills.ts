@@ -5,11 +5,11 @@ import javaIcon from "../assets/icons/java.svg";
 import sqlIcon from "../assets/icons/sql.svg";
 import nodeIcon from "../assets/icons/nodejs.svg";
 import expressIcon from "../assets/icons/express.svg";
+import socketioIcon from "../assets/icons/socketio.svg";
 import reactIcon from "../assets/icons/react.svg";
 import tailwindIcon from "../assets/icons/tailwindcss.svg";
 import shadcnIcon from "../assets/icons/shadcn.svg";
 import mongoIcon from "../assets/icons/mongodb.svg";
-import redisIcon from "../assets/icons/redis.svg";
 import oracleIcon from "../assets/icons/oracle.svg";
 import gitIcon from "../assets/icons/git.svg";
 import githubIcon from "../assets/icons/github.svg";
@@ -51,6 +51,7 @@ export const skillCategories: skillCategoryType[] = [
     skillList: [
       { name: "Node.js", icon: nodeIcon },
       { name: "Express", icon: expressIcon },
+      { name: "Socket", icon: socketioIcon },
       { name: "React", icon: reactIcon },
       { name: "Tailwind CSS", icon: tailwindIcon },
       { name: "shadcn/ui", icon: shadcnIcon },
@@ -66,11 +67,7 @@ export const skillCategories: skillCategoryType[] = [
         icon: mongoIcon,
       },
       {
-        name: "Redis",
-        icon: redisIcon,
-      },
-      {
-        name: "OracleDB",
+        name: "Oracle ADW",
         icon: oracleIcon,
       },
     ],
