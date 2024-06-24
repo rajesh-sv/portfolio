@@ -26,18 +26,17 @@ function Contributions() {
           </p>
         </div>
         <div className="mb-6 mt-10 flex flex-wrap gap-4">
-          {contributions.length ? (
-            contributions.map((contribution) => {
-              return <ContributionCard contribution={contribution} />;
-            })
-          ) : (
-            <div className="mx-auto">
-              <h2 className="scroll-m-20 text-center text-2xl font-semibold tracking-tight first:mt-0 sm:text-3xl">
-                Work in progress!
-              </h2>
-              <img src={workInProgressImg} alt="" />
-            </div>
-          )}
+          {contributions.map((contribution) => {
+            return <ContributionCard contribution={contribution} />;
+          })}
+        </div>
+        <div className="mb-6 mt-10 flex flex-wrap gap-4">
+          <div className="mx-auto">
+            <h2 className="scroll-m-20 text-center text-2xl font-semibold tracking-tight first:mt-0 sm:text-3xl">
+              Work in progress!
+            </h2>
+            <img src={workInProgressImg} alt="" />
+          </div>
         </div>
       </div>
     </main>
