@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import WebNovelBlog from "./components/blogs/webnovel-blog";
-import BinarySearchBlog from "./components/blogs/webnovel-blog";
+import AskingForHelpBlog from "./components/blogs/asking-for-help-blog";
 
 function Blogs() {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -37,7 +37,7 @@ function Blogs() {
           </p>
         </div>
         <div className="mb-6 mt-4 flex flex-col items-center">
-          <BinarySearchBlog />
+          <AskingForHelpBlog />
           <WebNovelBlog />
         </div>
       </div>
