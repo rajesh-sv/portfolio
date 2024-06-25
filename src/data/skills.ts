@@ -51,7 +51,7 @@ export const skillCategories: skillCategoryType[] = [
     skillList: [
       { name: "Node.js", icon: nodeIcon },
       { name: "Express", icon: expressIcon },
-      { name: "Socket", icon: socketioIcon },
+      { name: "Socket.io", icon: socketioIcon },
       { name: "React", icon: reactIcon },
       { name: "Tailwind CSS", icon: tailwindIcon },
       { name: "shadcn/ui", icon: shadcnIcon },
