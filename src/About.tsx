@@ -47,8 +47,8 @@ function About() {
           fanatic & competitive programmer.
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          I'm an aspiring Software Developer with a passion for coding and
-          technology. My journey began in late 2022 after watching the show{" "}
+          I'm a Software Developer with a passion for coding and technology. My
+          journey began in late 2022 after watching the show{" "}
           <a
             className="italic underline underline-offset-4"
             href="https://www.imdb.com/title/tt2575988/?ref_=ext_shr_lnk"

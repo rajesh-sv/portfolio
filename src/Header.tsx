@@ -16,6 +16,7 @@ import {
 } from "./components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import cv from "./cv.pdf";
 
 function Header() {
   const [page, setPage] = useState("about");
@@ -101,7 +102,7 @@ function Header() {
                 </Link>
               </SheetClose>
               <Button variant="secondary" size="lg" className="py-6">
-                <Link to="/cv.pdf" target="_blank" className="text-md">
+                <Link to={cv} target="_blank" className="text-md" download>
                   Download CV
                 </Link>
               </Button>
@@ -160,7 +161,7 @@ function Header() {
             Contact
           </Link>
           <Button variant="secondary">
-            <Link to="/cv.pdf" target="_blank">
+            <Link to={cv} target="_blank" download>
               Download CV
             </Link>
           </Button>
