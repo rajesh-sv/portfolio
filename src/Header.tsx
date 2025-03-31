@@ -168,7 +168,7 @@ function Header() {
         </nav>
         <nav className="ml-auto flex items-center">
           <a
-            href="https://www.linkedin.com/in/rajsv04/"
+            href="https://www.linkedin.com/in/rajesh-vansjalia/"
             target="_blank"
             rel="noopener noreferrer"
           >
