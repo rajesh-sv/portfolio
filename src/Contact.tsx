@@ -85,11 +85,11 @@ function Contact() {
               </CardTitle>
               <CardDescription className="break-words text-lg max-[350px]:text-base">
                 <a
-                  href="https://www.linkedin.com/in/rajsv04/"
+                  href="https://www.linkedin.com/in/rajesh-vansjalia/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://www.linkedin.com/in/rajsv04/
+                  https://www.linkedin.com/in/rajesh-vansjalia/
                 </a>
               </CardDescription>
             </CardHeader>
