@@ -11,7 +11,7 @@ import { ShineBorder } from "@/components/magicui/shine-border";
 export function Contact() {
   const { theme } = useTheme();
   return (
-    <div className="m-auto max-w-4xl p-4 md:p-8">
+    <>
       <Hero>
         <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
           Contact <span className="text-muted-foreground">Me.</span>
@@ -103,6 +103,6 @@ export function Contact() {
           </CardContent>
         </MagicCard>
       </Card>
-    </div>
+    </>
   );
 }
