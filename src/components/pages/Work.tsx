@@ -39,7 +39,7 @@ export function Work() {
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <ul className="ml-6 list-disc text-justify text-base sm:px-10 [&>li]:mt-2">
+                <ul className="mx-6 list-disc text-base sm:px-10 sm:text-justify [&>li]:mt-2">
                   {experience.points.map((point) => (
                     <li>{point}</li>
                   ))}

@@ -50,7 +50,7 @@ export function Contact() {
         />
         <MagicCard
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
-          className="p-10 md:p-14"
+          className="p-10 max-[400px]:px-2 md:p-14"
         >
           <CardContent>
             <form onSubmit={(e) => e.preventDefault()}>

@@ -10,7 +10,9 @@ type HeroProps = {
 export function Hero({ children, className }: HeroProps) {
   const { theme } = useTheme();
   return (
-    <div className={cn("relative overflow-hidden p-8", className)}>
+    <div
+      className={cn("relative overflow-hidden p-8 max-[400px]:p-4", className)}
+    >
       <Particles
         className="absolute inset-0 z-0"
         quantity={70}
