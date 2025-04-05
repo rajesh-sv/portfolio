@@ -7,7 +7,7 @@ const skills = [
     description: "language",
     className: "col-span-3 sm:col-span-1",
     background: (
-      <div className="flex flex-wrap justify-center gap-4 p-4">
+      <div className="flex flex-wrap justify-center gap-6 p-4">
         {skillsList
           .filter((skill) => skill.category === "programming")
           .map((skill) => (
@@ -49,7 +49,7 @@ const skills = [
     description: "/other",
     className: "col-span-3 sm:col-span-2",
     background: (
-      <div className="flex flex-wrap justify-center gap-4 p-4">
+      <div className="flex flex-wrap justify-center gap-6 p-4">
         {skillsList
           .filter((skill) => skill.category === "tools")
           .map((skill) => (
@@ -70,7 +70,7 @@ const skills = [
     description: "",
     className: "col-span-3 sm:col-span-1",
     background: (
-      <div className="flex flex-wrap justify-center gap-4 p-4">
+      <div className="flex flex-wrap justify-center gap-6 p-4">
         {skillsList
           .filter((skill) => skill.category === "database")
           .map((skill) => (
