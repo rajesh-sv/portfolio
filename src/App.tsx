@@ -6,6 +6,7 @@ import { Projects } from "@/components/pages/Projects";
 import { Work } from "@/components/pages/Work";
 import { Contact } from "@/components/pages/Contact";
 import { Footer } from "@/components/pages/Footer";
+import { Toaster } from "@/components/ui/sonner";
 import { useState } from "react";
 
 export function App() {
@@ -36,6 +37,7 @@ export function App() {
         )}
       </main>
       <Footer />
+      <Toaster />
     </ThemeProvider>
   );
 }

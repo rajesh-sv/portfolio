@@ -7,9 +7,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 import { Hero } from "@/components/hero";
 import { ShineBorder } from "@/components/magicui/shine-border";
+import { useSendEmail } from "@/hooks/useFireBaseHooks";
 
 export function Contact() {
   const { theme } = useTheme();
+  const { isSubmitting, formData, handleChange, handleSubmit } = useSendEmail();
+
   return (
     <>
       <Hero>
@@ -53,7 +56,7 @@ export function Contact() {
           className="p-10 max-[400px]:px-2 md:p-14"
         >
           <CardContent>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={(e) => handleSubmit(e)}>
               <div className="grid gap-6 text-sm">
                 <div className="grid gap-4">
                   <Label htmlFor="name">Name *</Label>
@@ -63,16 +66,22 @@ export function Contact() {
                     placeholder="Hello..."
                     required
                     maxLength={80}
+                    name="name"
+                    value={formData.name}
+                    onChange={(e) => handleChange(e)}
                   />
                 </div>
                 <div className="grid gap-4">
-                  <Label htmlFor="email">Email *</Label>
+                  <Label htmlFor="email_id">Email *</Label>
                   <Input
-                    id="email"
+                    id="email_id"
                     type="email"
                     placeholder="Where can I reply?"
                     required
                     maxLength={100}
+                    name="email_id"
+                    value={formData.email_id}
+                    onChange={(e) => handleChange(e)}
                   />
                 </div>
                 <div className="grid gap-4">
@@ -81,6 +90,9 @@ export function Contact() {
                     id="company"
                     type="text"
                     placeholder="Your company or website!"
+                    name="company"
+                    value={formData.company}
+                    onChange={(e) => handleChange(e)}
                   />
                 </div>
                 <div className="grid gap-4">
@@ -91,11 +103,14 @@ export function Contact() {
                     className="min-h-30"
                     required
                     maxLength={2000}
+                    name="message"
+                    value={formData.message}
+                    onChange={(e) => handleChange(e)}
                   />
                 </div>
                 <div className="ml-auto">
                   <InteractiveHoverButton className="rounded-lg px-8 py-2 text-base">
-                    Say Hi!
+                    {isSubmitting ? "Sending" : "Say Hi!"}
                   </InteractiveHoverButton>
                 </div>
               </div>

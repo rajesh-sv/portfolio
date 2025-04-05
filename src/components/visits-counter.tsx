@@ -1,11 +1,14 @@
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { NumberTicker } from "@/components/magicui/number-ticker";
+import { useViewCounter } from "@/hooks/useFireBaseHooks";
 
 type VisitsCounterProps = {
   className: string;
 };
 
 export function VisitsCounter({ className }: VisitsCounterProps) {
+  const { views } = useViewCounter();
+
   return (
     <div className={className}>
       <HoverBorderGradient
@@ -15,7 +18,7 @@ export function VisitsCounter({ className }: VisitsCounterProps) {
       >
         <div>
           <NumberTicker
-            value={100}
+            value={views}
             className="tracking-tighter whitespace-pre-wrap"
           />{" "}
           <span className="text-sm">views</span>
