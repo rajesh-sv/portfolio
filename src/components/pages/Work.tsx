@@ -21,10 +21,18 @@ export function Work() {
           My journey into software development has led me to apply my skills in
           practical settings. I thrive on translating complex problems into
           functional, efficient software, always eager to learn and contribute
-          to team success. Below is a summary of my professional experience:
+          to team success.
+        </p>
+        <p className="text-foreground/90 mt-4 text-lg md:text-xl">
+          Below is a summary of my professional experience:
         </p>
       </Hero>
-      <Accordion type="single" collapsible className="w-full p-4">
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full p-4"
+        defaultValue={experiences[0].id}
+      >
         {experiences.map((experience) => {
           return (
             <AccordionItem value={experience.id} key={experience.id}>

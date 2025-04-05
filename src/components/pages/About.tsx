@@ -3,34 +3,36 @@ import profileImg from "@/assets/images/profile.jpg";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skills } from "@/components/pages/Skills";
+import { WordRotate } from "@/components/magicui/word-rotate";
 
 export function About() {
   return (
     <>
       <Hero>
-        <div>
-          <Card className="relative float-start mr-4 max-w-64 min-w-34 overflow-hidden rounded-3xl p-0 max-[510px]:w-34 sm:mr-6">
-            <ShineBorder
-              shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-              borderWidth={2}
-              duration={8}
-            />
-            <CardContent className="p-0">
-              <img src={profileImg} alt="Profile picture" />
-            </CardContent>
-          </Card>
-          <h1 className="mt-2 text-4xl font-extrabold tracking-tight max-[400px]:text-3xl md:text-5xl">
-            Hey! I'm{" "}
-            <span className="text-muted-foreground">Rajesh Vansjalia</span>
-          </h1>
-          <p className="text-foreground/90 mt-4 text-lg md:text-xl">
-            <span className="text-foreground text-2xl font-semibold tracking-tight">
-              TL;DR
-            </span>{" "}
-            Coding by day, defeating dragons by night (in web novels), sci-fi
-            fanatic & competitive programmer.
-          </p>
-        </div>
+        <Card className="relative float-end ml-4 max-w-64 min-w-34 overflow-hidden rounded-3xl p-0 max-[510px]:w-34 sm:mr-6">
+          <ShineBorder
+            shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+            borderWidth={2}
+            duration={8}
+          />
+          <CardContent className="p-0">
+            <img src={profileImg} alt="Profile picture" />
+          </CardContent>
+        </Card>
+        <h1 className="mt-2 text-4xl font-extrabold tracking-tight max-[400px]:text-3xl md:text-5xl">
+          Hey! I'm{" "}
+          <WordRotate
+            className="text-muted-foreground"
+            words={["Rajesh Vansjalia.", "a Software Dev."]}
+          />
+        </h1>
+        <p className="text-foreground/90 mt-4 text-lg md:text-xl">
+          <span className="text-foreground text-2xl font-semibold tracking-tight">
+            TL;DR
+          </span>{" "}
+          Coding by day, defeating dragons by night (in web novels), sci-fi
+          fanatic & competitive programmer.
+        </p>
       </Hero>
       <div className="mx-6 grid gap-4 text-lg leading-7">
         <p>

@@ -36,6 +36,11 @@ export const skillsList: SkillType[] = [
     category: "database",
   },
   {
+    name: "Firebase",
+    icon: "https://cdn.simpleicons.org/firebase/black",
+    category: "database",
+  },
+  {
     name: "Node.js",
     icon: "https://cdn.simpleicons.org/node.js/black",
     category: "frameworks",
@@ -63,6 +68,11 @@ export const skillsList: SkillType[] = [
   {
     name: "Jest",
     icon: "https://cdn.simpleicons.org/jest/black",
+    category: "frameworks",
+  },
+  {
+    name: "React Router",
+    icon: "https://cdn.simpleicons.org/reactrouter/black",
     category: "frameworks",
   },
   {

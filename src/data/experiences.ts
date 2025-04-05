@@ -27,4 +27,4 @@ export const experiences: experienceType[] = [
       "Served as the primary Point-of-Contact on a recent client project, demonstrating technical ownership and strong communication skills.",
     ],
   },
-];
+].reverse();

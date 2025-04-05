@@ -2,12 +2,13 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandX,
+  IconMail,
 } from "@tabler/icons-react";
 
 export function Footer() {
   return (
     <footer className="border-border/60 bg-background/95 mt-auto w-full border-t">
-      <div className="flex h-16 max-w-screen-2xl items-center justify-center gap-2">
+      <div className="max-w-screen-5xl flex h-16 items-center justify-center gap-2">
         <div className="flex items-center gap-2">
           <a
             href="https://www.linkedin.com/in/rajesh-vansjalia/"
@@ -33,10 +34,14 @@ export function Footer() {
             <IconBrandX className="stroke-muted-foreground size-6 hover:stroke-sky-400" />
             <span className="sr-only">X, previously Twitter</span>
           </a>
+          <a href="mailto:rajsv04@gmail.com">
+            <IconMail className="stroke-muted-foreground size-6 hover:stroke-red-400" />
+            <span className="sr-only">rajsv04@gmail.com</span>
+          </a>
         </div>
         |
         <span className="text-muted-foreground text-sm">
-          Build by{" "}
+          Built by{" "}
           <a
             className="underline underline-offset-4"
             href="https://github.com/rajesh-sv"

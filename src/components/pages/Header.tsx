@@ -1,7 +1,6 @@
 import { CircleChevronRightIcon } from "@/components/ui/circle-chevron-right";
-import { VisitsCounter } from "../visits-counter";
-import { ModeToggle } from "../mode-toggle";
-import { AudioLinesIcon } from "../ui/audio-lines";
+import { VisitsCounter } from "@/components/visits-counter";
+import { ModeToggle } from "@/components/mode-toggle";
 import { IconCode } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import {
@@ -62,13 +61,15 @@ export function Header({ page, setPage }: HeaderProps) {
       Contact
     </a>,
     <a key={4} target="_blank" href={resume}>
-      <RainbowButton className="w-full">Resume</RainbowButton>
+      <RainbowButton className="h-10 w-full rounded-lg px-6 md:text-base">
+        Resume
+      </RainbowButton>
     </a>,
   ];
 
   return (
     <header className="border-grid bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur">
-      <div className="m-auto flex max-w-5xl gap-4 p-4">
+      <div className="m-auto flex max-w-5xl items-center gap-4 p-4">
         <Sheet>
           <SheetTrigger asChild>
             <div className="md:hidden">
@@ -92,7 +93,6 @@ export function Header({ page, setPage }: HeaderProps) {
           {pageLinks}
         </nav>
         <VisitsCounter className="ml-auto" />
-        <AudioLinesIcon className="size-8 p-1" />
         <ModeToggle />
       </div>
     </header>
