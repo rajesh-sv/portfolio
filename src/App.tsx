@@ -12,7 +12,7 @@ import { useState } from "react";
 export function App() {
   const [page, setPage] = useState<string>("/");
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider storageKey="vite-ui-theme">
       <Header page={page} setPage={setPage} />
       <main className="m-auto max-w-4xl p-4 md:p-8">
         {page === "/" && (
