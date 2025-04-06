@@ -19,7 +19,7 @@ export function About() {
             <img src={profileImg} alt="Profile picture" />
           </CardContent>
         </Card>
-        <h1 className="mt-2 text-4xl font-extrabold tracking-tight max-[400px]:text-3xl md:text-5xl">
+        <h1 className="mt-2 text-2xl font-extrabold tracking-tight min-[400px]:text-4xl md:text-5xl">
           Hey! I'm{" "}
           <WordRotate
             className="text-muted-foreground"
