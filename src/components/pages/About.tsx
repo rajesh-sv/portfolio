@@ -4,8 +4,11 @@ import { ShineBorder } from "@/components/magicui/shine-border";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skills } from "@/components/pages/Skills";
 import { WordRotate } from "@/components/magicui/word-rotate";
+import { useEffect } from "react";
 
 export function About() {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <>
       <Hero>

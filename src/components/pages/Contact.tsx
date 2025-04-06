@@ -8,10 +8,13 @@ import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-b
 import { Hero } from "@/components/hero";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { useSendEmail } from "@/hooks/useFireBaseHooks";
+import { useEffect } from "react";
 
 export function Contact() {
   const { theme } = useTheme();
   const { isSubmitting, formData, handleChange, handleSubmit } = useSendEmail();
+
+  useEffect(() => window.scrollTo(0, 0), []);
 
   return (
     <>

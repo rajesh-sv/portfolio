@@ -6,8 +6,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { experiences } from "@/data/experiences";
+import { useEffect } from "react";
 
 export function Work() {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <>
       <Hero>

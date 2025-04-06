@@ -4,8 +4,11 @@ import { projects } from "@/data/projects";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { IconBrandGithubFilled, IconWorld } from "@tabler/icons-react";
+import { useEffect } from "react";
 
 export function Projects() {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <>
       <Hero>
