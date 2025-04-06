@@ -55,7 +55,6 @@ export function useViewCounter() {
         localStorage.getItem("last_visited") || new Date(),
       );
       const date_diff = daysBetween(last_visited_date, current_date);
-      console.log(date_diff);
       if (date_diff > 0) {
         localStorage.setItem("last_visited", current_date.toLocaleString());
         incrementViews();
