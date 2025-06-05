@@ -1,3 +1,4 @@
+import videoStreamingInfraImg from "../assets/images/projects/video-processing-infra-flow.png";
 import portfolioImg from "../assets/images/projects/portfolio-dark.png";
 import daoistDialogueImg from "../assets/images/projects/daoist-dialogue.png";
 import todoImg from "../assets/images/projects/todos-to-do.png";
@@ -16,6 +17,29 @@ export type projectType = {
 };
 
 export const projects: projectType[] = [
+  {
+    name: "Video Streaming Infra",
+    description:
+      "This project is a modular video streaming platform designed to replicate the high level architecture of websites like YouTube.",
+    img: videoStreamingInfraImg,
+    website: "https://github.com/rajesh-sv/video-streaming-infra",
+    source: "https://github.com/rajesh-sv/video-streaming-infra",
+    techStack: [
+      "Docker",
+      "NGINX",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "AWS S3",
+      "Apache Kafka",
+      "Elasticsearch",
+      "Typescript",
+      "React.js",
+      "React Router",
+      "TailwindCSS",
+      "shadcn/ui",
+    ],
+  },
   {
     name: "Portfolio",
     description:
