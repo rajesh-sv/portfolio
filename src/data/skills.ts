@@ -1,3 +1,5 @@
+import awsS3Icon from "../assets/icons/aws-s3.svg";
+
 export type SkillType = {
   name: string;
   icon: string;
@@ -36,6 +38,16 @@ export const skillsList: SkillType[] = [
     category: "database",
   },
   {
+    name: "AWS S3",
+    icon: awsS3Icon,
+    category: "database",
+  },
+  {
+    name: "Elasticsearch",
+    icon: "https://cdn.simpleicons.org/elasticsearch/black",
+    category: "database",
+  },
+  {
     name: "Firebase",
     icon: "https://cdn.simpleicons.org/firebase/black",
     category: "database",
@@ -56,6 +68,11 @@ export const skillsList: SkillType[] = [
     category: "frameworks",
   },
   {
+    name: "React Router",
+    icon: "https://cdn.simpleicons.org/reactrouter/black",
+    category: "frameworks",
+  },
+  {
     name: "TailwindCSS",
     icon: "https://cdn.simpleicons.org/tailwindcss/black",
     category: "frameworks",
@@ -71,13 +88,18 @@ export const skillsList: SkillType[] = [
     category: "frameworks",
   },
   {
-    name: "React Router",
-    icon: "https://cdn.simpleicons.org/reactrouter/black",
-    category: "frameworks",
+    name: "NGINX",
+    icon: "https://cdn.simpleicons.org/nginx/black",
+    category: "tools",
   },
   {
     name: "Docker",
     icon: "https://cdn.simpleicons.org/docker/black",
+    category: "tools",
+  },
+  {
+    name: "Apache Kafka",
+    icon: "https://cdn.simpleicons.org/apachekafka/black",
     category: "tools",
   },
   {
@@ -106,8 +128,8 @@ export const skillsList: SkillType[] = [
     category: "tools",
   },
   {
-    name: "Vim",
-    icon: "https://cdn.simpleicons.org/vim/black",
+    name: "Neovim",
+    icon: "https://cdn.simpleicons.org/neovim/black",
     category: "tools",
   },
 ];
