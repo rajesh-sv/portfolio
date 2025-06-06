@@ -39,11 +39,13 @@ export function About() {
       </Hero>
       <div className="mx-6 grid gap-4 text-lg leading-7">
         <p>
-          Programming, to me, is a continuous journey of growth and skill
-          development, much like leveling up in{" "}
-          <span className="font-semibold">RPG</span> games. Every bug fixed and
-          challenge conquered feels like unlocking a secret ability that
-          transforms the way I code.
+          As a Data Engineer, I design and optimize data solutions using Oracle
+          Fusion Data Intelligence (FDI) while automating workflows through
+          Python. I have also developed fully functional web applications using
+          React.js, TailwindCSS, Node.js, Express.js, MongoDB, PostgreSQL, AWS
+          S3, Firebase, Kafka, Elasticsearch, and Docker; which builds over my
+          professional experience and provides extra value to software
+          development teams.
         </p>
         {/* <p>
           I also enjoy tackling complex problems, which is why I regularly
@@ -60,7 +62,7 @@ export function About() {
           BTW (😎signature look of superiority).
         </p> */}
         <p>
-          When I'm not coding, you'll likely find me absorbed in reading on{" "}
+          When I'm not coding, you'll likely find me reading on{" "}
           <a
             className="underline underline-offset-4"
             href="https://www.wuxiaworld.com"
@@ -81,8 +83,12 @@ export function About() {
           . My favorite genres include sci-fi, fantasy, and xianxia.
         </p>
         <p>
-          On weekends, I enjoy cooking with my mother, binge-watching shows, or
+          On weekends, I enjoy cooking with my mother, binge watching shows, or
           tinkering with my computer.
+        </p>
+        <p>
+          And as is mandatory for any Neovim user,{" "}
+          <span className="font-semibold">I use Neovim BTW</span>.
         </p>
       </div>
       <Skills />
